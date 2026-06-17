@@ -4,6 +4,16 @@
 // ========================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Preloader
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                preloader.classList.add('hidden');
+            }, 1500);
+        });
+    }
+    
     // Navigation scroll effect
     const nav = document.querySelector('.nav');
     

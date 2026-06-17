@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Precision — Réparation d'appareils électroniques</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Tech Precision</a>
+            <ul class="nav-menu">
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Processus</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta" onclick="scrollToContact()">Devis gratuit</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <p class="hero-overline">Artisanat de précision depuis 2015</p>
+            <h1 class="hero-title">La réparation<br>comme artisanat</h1>
+            <p class="hero-subtitle">Smartphones, tablettes, ordinateurs — каждый appareil mérite une attention particulière. Nous redonnons vie à vos appareils avec la même minutie qu'un horloger apporte à ses créations.</p>
+            <div class="hero-cta-group">
+                <button class="btn btn-primary" onclick="scrollToContact()">Demander un devis</button>
+                <a href="#services" class="btn btn-secondary">Découvrir nos services</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-circle"></div>
+            <div class="hero-accent"></div>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">12 000+</span>
+                <span class="stat-label">Appareils réparés</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Taux de satisfaction</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">48h</span>
+                <span class="stat-label">Délai moyen</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-number">6 mois</span>
+                <span class="stat-label">Garantie offeredte</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
+        <div class="section-header">
+            <p class="section-overline">Notre expertise</p>
+            <h2 class="section-title">L'art de la réparation</h2>
+            <p class="section-desc">Chaque réparation est unique. Comme un horloger, nous évaluons, diagnostiquons et restaurons avec une précision méticuleuse.</p>
+        </div>
+        <div class="expertise-grid">
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                        <line x1="12" y1="18" x2="12.01" y2="18"/>
+                    </svg>
+                </div>
+                <h3>Smartphones</h3>
+                <p>Écrans, batteries, connecteurs, problèmes logiciels — toutes marques confondues.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                        <line x1="8" y1="21" x2="16" y2="21"/>
+                        <line x1="12" y1="17" x2="12" y2="21"/>
+                    </svg>
+                </div>
+                <h3>Ordinateurs</h3>
+                <p>PC et Mac — Hardware, software, récupération de données, upgrades.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                        <rect x="9" y="9" width="6" height="6"/>
+                        <line x1="9" y1="1" x2="9" y2="4"/>
+                        <line x1="15" y1="1" x2="15" y2="4"/>
+                        <line x1="9" y1="20" x2="9" y2="23"/>
+                        <line x1="15" y1="20" x2="15" y2="23"/>
+                        <line x1="20" y1="9" x2="23" y2="9"/>
+                        <line x1="20" y1="14" x2="23" y2="14"/>
+                        <line x1="1" y1="9" x2="4" y2="9"/>
+                        <line x1="1" y1="14" x2="4" y2="14"/>
+                    </svg>
+                </div>
+                <h3>Tablettes</h3>
+                <p>Tablettes tactiles, iPad — Réparation écran, batterie, connecteurs.</p>
+            </div>
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Autres appareils</h3>
+                <p>Consoles de jeux, montres connectées, accessories.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <p class="section-overline">Services</p>
+            <h2 class="section-title">Ce que nous réparerons</h2>
+        </div>
+        <div class="services-list">
+            <div class="service-item">
+                <div class="service-number">01</div>
+                <div class="service-content">
+                    <h3>Remplacement d'écran</h3>
+                    <p>Écrans originaux ou grade A+ — Garantie 6 mois incluse sur pièces et main d'œuvre.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">02</div>
+                <div class="service-content">
+                    <h3>Réparation batterie</h3>
+                    <p>Batteries neuves certifiées — Diagnostic gratuit et transparence totale sur le prix.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">03</div>
+                <div class="service-content">
+                    <h3>Réparation connecteurs</h3>
+                    <p>Ports de charge, jacks audio, connecteurs Lightning/USB-C — Souderie de précision.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">04</div>
+                <div class="service-content">
+                    <h3>Problèmes logiciels</h3>
+                    <p>Réinitialisation, récupération de données, désinfection malware, mises à jour.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">05</div>
+                <div class="service-content">
+                    <h3>Diagnostic complet</h3>
+                    <p>Analyse approfondie — 49€ (offert si réparation acceptée). Rapport détaillé en 24h.</p>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-number">06</div>
+                <div class="service-content">
+                    <h3>Récupération de données</h3>
+                    <p>Disques durs, SSD, smartphones — Récupération professionnelle de vos données.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="section-header">
+            <p class="section-overline">Notre processus</p>
+            <h2 class="section-title">Comment nous travaillons</h2>
+        </div>
+        <div class="process-timeline">
+            <div class="process-step">
+                <div class="step-marker">
+                    <span>1</span>
+                </div>
+                <div class="step-content">
+                    <h3>Diagnostic</h3>
+                    <p>Vous bringez votre appareil ou nous l'enlevons. Diagnostic complet en 24h avec rapport photo.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-marker">
+                    <span>2</span>
+                </div>
+                <div class="step-content">
+                    <h3>Devis détaillé</h3>
+                    <p>Prix fixe garanti — Pas de surprise. Acceptation explicite requise avant toute réparation.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-marker">
+                    <span>3</span>
+                </div>
+                <div class="step-content">
+                    <h3>Réparation</h3>
+                    <p>Intervention soignée — Pièces originales ou grade A+, respect des délais annoncés.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-marker">
+                    <span>4</span>
+                </div>
+                <div class="step-content">
+                    <h3>Contrôle qualité</h3>
+                    <p>Test complet de l'appareil — Fonctionnalités, étanchéité, performances vérifiées.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="step-marker">
+                    <span>5</span>
+                </div>
+                <div class="step-content">
+                    <h3>Livraison</h3>
+                    <p>Appareil remis en main propre ou envoyé — Garantie 6 mois starts à la livraison.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="why-us-container">
+            <div class="why-us-content">
+                <p class="section-overline">Pourquoi nous</p>
+                <h2 class="section-title">L'excellence à chaque étape</h2>
+                <ul class="why-us-list">
+                    <li>
+                        <strong>Transparence totale</strong>
+                        <span>Prix affichés, pas de frais cachés, devis gratuit sans engagement.</span>
+                    </li>
+                    <li>
+                        <strong>Garantie 6 mois</strong>
+                        <span>Sur toutes nos réparations — pièces et main d'œuvre.</span>
+                    </li>
+                    <li>
+                        <strong>Expertise reconnue</strong>
+                        <span>10+ ans d'expérience, formation continue, toutes marques.</span>
+                    </li>
+                    <li>
+                        <strong>Éco-responsable</strong>
+                    <span>Réparer plutôt que remplacer —，减少电子 waste.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="why-us-visual">
+                <div class="why-us-card">
+                    <div class="certification-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="8" r="6"/>
+                            <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+                        </svg>
+                    </div>
+                    <p>Certified Partner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <p class="section-overline">Contact</p>
+            <h2 class="section-title">Demander un devis</h2>
+            <p class="section-desc">Décrivez votre problème — nous vous répondons sous 2h avec un devis détaillé.</p>
+        </div>
+        <form class="contact-form" id="quoteForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
+                </div>
+                <div class="form-group">
+                    <label for="device">Appareil</label>
+                    <select id="device" name="device" required>
+                        <option value="">Sélectionner...</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="pc">Ordinateur PC</option>
+                        <option value="mac">Mac / MacBook</option>
+                        <option value="tablette">Tablette</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="brand">Marque</label>
+                <input type="text" id="brand" name="brand" placeholder="Apple, Samsung, etc.">
+            </div>
+            <div class="form-group">
+                <label for="problem">Description du problème</label>
+                <textarea id="problem" name="problem" rows="5" required placeholder="Décrivez précisément le problème..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
+        </form>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:contact@techprecision.ch">contact@techprecision.ch</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Téléphone</span>
+                <a href="tel:+41225551234">+41 22 555 12 34</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-label">Horaire</span>
+                <span>Lun-Ven: 9h-18h | Sam: 10h-16h</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>Tech Precision</h3>
+                <p>Réparation d'appareils électroniques de précision.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Processus</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Ordinateurs</a></li>
+                    <li><a href="#">Tablettes</a></li>
+                    <li><a href="#">Autres appareils</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Tech Precision. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

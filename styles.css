@@ -255,6 +255,15 @@ ul { list-style: none; }
     z-index: 1;
 }
 
+.hero-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    border-radius: 2px;
+}
+
 .hero-circle {
     position: absolute;
     width: 600px;
@@ -386,6 +395,14 @@ section {
     border-color: var(--color-accent);
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.expertise-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: var(--space-sm);
+    border-radius: 2px;
 }
 
 .expertise-icon {
